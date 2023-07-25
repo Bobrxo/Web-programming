@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" 
+   content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<title>web menu</title>
+</head>
+<body>
+    <header>
+        <h1 class="website-title">Yunnan Traveling </h1>
+        <a href="https://dams.dotdotnews.com/dams/wwpproduct/image/202105/06/6093964ee4b03fc6f3b8e7b11.jpg" class="header-background-link"></a>
+        <div class="menu">
+            <ul>
+                li><a href="index.html">Home Page</a></li>
+                <li><a href="History.html">History</a></li>
+				<li><a href="Destination.html">Destination</a></li>
+                <li><a href="Food.html">Food</a></li>
+                
+            </ul>
+        </div>
+    </header>
+
+  
+
+ 
+
+
+   <style>
+        /* styles.css */
+        body {
+            margin: 0;
+            padding: 0;
+           font-family: 'Open Sans', sans-serif;
+		   background-color:#93693B;
+        }
+
+        header {
+            position: relative;
+            background-image: url(https://dams.dotdotnews.com/dams/wwpproduct/image/202105/06/6093964ee4b03fc6f3b8e7b11.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 140px;
+        }
+
+        .header-background-link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            rgba(0,0,0,0.8) /* 设置透明度来使链接不可见，但仍然可点击 */
+        }
+
+.website-title {
+    text-align: center;
+	font-size: 48px;
+            background: linear-gradient(to right, black, blue);
+            -webkit-background-clip: text; /* 设置背景剪裁为文本 */
+            background-clip: text;
+            color: transparent; 
+    margin-bottom: 10px;
+    margin-top: 0; /* 添加这行样式去除h1元素的上方外边距 */
+text-shadow: 1px 1px 2px #2D8CFF;
+}
+
+
+       .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* 使用 Flexbox 布局使菜单项水平排列 */
+    justify-content: center; /* 将菜单项水平居中 */
+}
+
+       .menu li {
+    display: inline;
+    flex: 1; /* 使用 Flexbox 设置菜单项的弹性比例 */
+    text-align: center; /* 居中文本内容 */
+}
+
+        .menu li:last-child {
+            margin-right: 0;
+        }
+
+             .menu a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px #FFFFFF;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+       footer {
+    position: reletive;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .about-us, .contact {
+            flex-basis: 45%; /* 控制两个内容块的宽度 */
+        }
+
+        .about-us h3, .contact h3 {
+            color: #fff;
+        }
+
+        .about-us p, .contact p {
+            color: #ddd;
+        }
+		
+		 .container {
+            display: flex;
+            align-items: flex-start;
+            padding: 5px;
+			justify-content: flex-end;
+        }
+        .left-column {
+            flex: 1;
+            
+        }
+		 .left-column img {
+            max-width: 500px; /* 设置图片的最大宽度 */
+            max-height: 500px; /* 设置图片的最大高度 */
+            border-radius: 10px; /* 设置图片的四角圆滑程度 */
+        }
+        .right-column {
+            flex: 2;
+			width:50%;
+			 font-size: 32px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+	
+	<div class="container">
+        <div class="left-column">
+            <img src="https://pic1.zhimg.com/v2-a2e3de4280814120c278cadbb4b61cc8_720w.jpg?source=172ae18b" alt="P2">
+        </div>
+        <div class="right-column">
+		
+            <h2>1.7million years ago</h2>
+            <p>Yunnan is a province in China, with its capital city being Kunming. Located in the southwestern part of China, Yunnan's history can be traced back to the Yuanmou Man, who lived around 1.7 million years ago. They were among the earliest hominins to have walked upright in Asia.</p>
+        </div>
+    </div>
+	
+	 <div class="container">
+        <div class="left-column">
+            
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/DianScuplture1.jpg/1024px-DianScuplture1.jpg" alt="Old Yunnan">
+		</div>
+        <div class="right-column">
+            <h2>B.C.300</h2>
+            <p>In the 3rd century BC, the first kingdom emerged in Yunnan. Later, it was unified during the Qin Dynasty. Since then, Yunnan has been an important transportation hub for exchanges between China and other countries to the south.</p>
+        </div>
+    </div>
+	
+	
+	<div class="container">
+        <div class="left-column">
+            <img src="https://5b0988e595225.cdn.sohucs.com/images/20180914/c597f8d4b7d24af7a4ff99b057cbbb88.jpeg" alt="Old Yunnan">
+        </div>
+        <div class="right-column">
+            <h2>20 Century</h2>
+            <p>In the early 20th century, China was going through one of its most tumultuous periods. Yunnan, as the only land route connecting to foreign territories, played a crucial role during World War II.</p>
+        </div>
+    </div>
+	
+	<div class="container">
+        <div class="left-column">
+            <img src="https://p1-q.mafengwo.net/s11/M00/F8/06/wKgBEFr3tBGAV0tJAAKl1gKZhUI80.jpeg" alt="now">
+        </div>
+        <div class="right-column">
+            <h2>Now</h2>
+            <p>Today, Yunnan is one of China's renowned tourist destinations. Due to its unique climate, people from other regions in China choose to visit Yunnan during the summer and winter. It offers pleasant temperatures, neither too cold nor too hot. Additionally, the region boasts a wide variety of delicious cuisine and a distinctive cultural charm.</p>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <div class="about-us">
+            <h3>About us</h3>
+            <p>Welcome to Yunnan Traveling! We are your ultimate guide to exploring the enchanting province of Yunnan, China. Our passion is to showcase the diverse and breathtaking destinations this region has to offer. </p>
+        </div>
+        <div class="contact">
+            <h3>Contact us</h3>
+            <p>Adress: 〒606-8225
+京都市左京区田中門前町7番地</p>
+            <p>Phone number：+1234567890</p>
+            <p>Email：YunanT@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+</html>

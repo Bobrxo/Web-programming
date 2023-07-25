@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" 
+   content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<title>web menu</title>
+</head>
+<body>
+    <header>
+        <h1 class="website-title">Yunnan Traveling </h1>
+        <a href="https://dams.dotdotnews.com/dams/wwpproduct/image/202105/06/6093964ee4b03fc6f3b8e7b11.jpg" class="header-background-link"></a>
+        <div class="menu">
+            <ul>
+                li><a href="index.html">Home Page</a></li>
+                <li><a href="History.html">History</a></li>
+				<li><a href="Destination.html">Destination</a></li>
+                <li><a href="Food.html">Food</a></li>
+                
+            </ul>
+        </div>
+    </header>
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <style>
+        /* styles.css */
+        body {
+            margin: 0;
+            padding: 0;
+           font-family: 'Open Sans', sans-serif;
+		background-color: rgba(255, 255, 255, 0.1);
+		background-image: url("https://www.cielyunnan.uk/wp-content/uploads/2022/02/Yunnan-Map.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+
+        header {
+            position: relative;
+            background-image: url(https://dams.dotdotnews.com/dams/wwpproduct/image/202105/06/6093964ee4b03fc6f3b8e7b11.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 140px;
+        }
+
+        .header-background-link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            rgba(0,0,0,0.8) /* 设置透明度来使链接不可见，但仍然可点击 */
+        }
+
+.website-title {
+    text-align: center;
+	font-size: 48px;
+            background: linear-gradient(to right, black, blue);
+            -webkit-background-clip: text; /* 设置背景剪裁为文本 */
+            background-clip: text;
+            color: transparent; 
+    margin-bottom: 10px;
+    margin-top: 0; /* 添加这行样式去除h1元素的上方外边距 */
+text-shadow: 1px 1px 2px #2D8CFF;
+}
+
+
+       .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* 使用 Flexbox 布局使菜单项水平排列 */
+    justify-content: center; /* 将菜单项水平居中 */
+}
+
+       .menu li {
+    display: inline;
+    flex: 1; /* 使用 Flexbox 设置菜单项的弹性比例 */
+    text-align: center; /* 居中文本内容 */
+}
+
+        .menu li:last-child {
+            margin-right: 0;
+        }
+
+             .menu a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px #FFFFFF;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+       footer {
+    position: reletive;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .about-us, .contact {
+            flex-basis: 45%; /* 控制两个内容块的宽度 */
+        }
+
+        .about-us h3, .contact h3 {
+            color: #fff;
+        }
+
+        .about-us p, .contact p {
+            color: #ddd;
+        }
+		
+		/* 第一行图片布局 */
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-item {
+            width: 200px; /* 增大图片的宽度 */
+            height: 200px; /* 增大图片的高度 */
+            border-radius: 10px;
+            overflow: hidden;
+			display: flex; /* 使用Flexbox布局 */
+            flex-direction: column; /* 垂直排列图片和名字 */
+            align-items: center; /* 水平居中对齐图片和名字 */
+			}
+        .image-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+		/* 第二行文字布局 */
+        .name-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+			flex-wrap: wrap; /* 允许名字换行 */
+			
+        }
+        .name-item {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center; 
+			width: 200px; /
+        }
+		
+		/* 第三行视频和地图布局 */
+        .video-map-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-right: -500px; /* 调整容器的右外边距，实现视频和地图向右移动 */
+}
+ .video {
+    flex: 1; /* 使用flex属性，让视频和地图占据剩余空间 */
+    border: none;
+    box-sizing: border-box;
+    width: 100%; /* 使视频和地图宽度占满父元素 */
+    height: 100%; /* 使视频和地图高度占满父元素 */
+    outline: none;
+    margin: 100px 10px 10px 100px; /* 上边距为 20 像素，右边距为 10 像素，下边距为 10 像素，左边距为 20 像素 */
+}
+
+.map {
+    flex: 1; /* 使用flex属性，让视频和地图占据剩余空间 */
+    border: none;
+    box-sizing: border-box;
+    width: 100%; /* 使视频和地图宽度占满父元素 */
+    height: 100%; /* 使视频和地图高度占满父元素 */
+    outline: none;
+    margin: 10px 20px 20px 10px; /* 上边距为 10 像素，右边距为 20 像素，下边距为 20 像素，左边距为 10 像素 */
+}
+    </style>
+	
+
+      <div class="image-row">
+        <div class="image-item">
+            <img src="https://pic1.zhimg.com/80/v2-1ee87b71947c7e45a9cd6f142bde2f04_1440w.webp" alt="图片1">
+            <div class="name-item"><a href="昆明.html">Kunming</a></div>
+        </div>
+        <div class="image-item">
+            <img src="https://p2.itc.cn/images01/20200821/af13b6319fd444a6be8f1322bfe2da28.jpeg" alt="图片2">
+            <div class="name-item"><a href="大理.html">Daling</a></div>
+        </div>
+        <div class="image-item">
+            <img src="https://p6.itc.cn/images01/20220112/3461b13a37e6493bb64cfdd3aa6485f2.jpeg" alt="图片3">
+            <div class="name-item"><a href="丽江.html">Lijiang</a></div>
+        </div>
+        <div class="image-item">
+            <img src="https://img3.chinadaily.com.cn/images/202109/29/6153b771a3107be47f2645ee.jpeg" alt="图片4">
+            <div class="name-item"><a href="西双版纳.html">Xishuangbanna</a></div>
+        </div>
+    </div>
+	
+	<div class="video-map-row">
+        <div class="video">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/7ktCyewG-b4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681679.1247301316!2d100.05134836324861!3d25.691515944700352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36d083db32a05b29%3A0xa63cebb7ca8dac29!2z5Lit5Zu95LqR5Y2X55yB!5e0!3m2!1szh-CN!2sjp!4v1690288521327!5m2!1szh-CN!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+	
+	
+</body>
+
+<footer>
+    <div class="footer-content">
+        <div class="about-us">
+            <h3>About us</h3>
+            <p>Welcome to Yunnan Traveling! We are your ultimate guide to exploring the enchanting province of Yunnan, China. Our passion is to showcase the diverse and breathtaking destinations this region has to offer. </p>
+        </div>
+        <div class="contact">
+            <h3>Contact us</h3>
+            <p>Adress: 〒606-8225
+京都市左京区田中門前町7番地</p>
+            <p>Phone number：+1234567890</p>
+            <p>Email：YunanT@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+</html>

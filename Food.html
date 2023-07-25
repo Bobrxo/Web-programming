@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" 
+   content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<title>web menu</title>
+</head>
+<body>
+    <header>
+        <h1 class="website-title">Yunnan Traveling </h1>
+        <a href="https://dams.dotdotnews.com/dams/wwpproduct/image/202105/06/6093964ee4b03fc6f3b8e7b11.jpg" class="header-background-link"></a>
+        <div class="menu">
+            <ul>
+                li><a href="index.html">Home Page</a></li>
+                <li><a href="History.html">History</a></li>
+				<li><a href="Destination.html">Destination</a></li>
+                <li><a href="Food.html">Food</a></li>
+                
+            </ul>
+        </div>
+    </header>
+
+    <!-- 页面其余内容在这里添加 -->
+
+
+   
+
+
+
+
+
+
+
+
+   <style>
+        /* styles.css */
+        body {
+            margin: 0;
+            padding: 0;
+           font-family: 'Open Sans', sans-serif;
+        }
+
+        header {
+            position: relative;
+            background-image: url(https://dams.dotdotnews.com/dams/wwpproduct/image/202105/06/6093964ee4b03fc6f3b8e7b11.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 140px;
+        }
+
+        .header-background-link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            rgba(0,0,0,0.8) 
+        }
+
+.website-title {
+    text-align: center;
+	font-size: 48px;
+            background: linear-gradient(to right, black, blue);
+            -webkit-background-clip: text; 
+            background-clip: text;
+            color: transparent; 
+    margin-bottom: 10px;
+    margin-top: 0; 
+text-shadow: 1px 1px 2px #2D8CFF;
+}
+
+
+       .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+       .menu li {
+    display: inline;
+    flex: 1; 
+    text-align: center; 
+}
+
+        .menu li:last-child {
+            margin-right: 0;
+        }
+
+             .menu a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px #FFFFFF;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+       footer {
+    position: reletive;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .about-us, .contact {
+            flex-basis: 45%; 
+        }
+
+        .about-us h3, .contact h3 {
+            color: #fff;
+        }
+
+        .about-us p, .contact p {
+            color: #ddd;
+        }
+		.image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+		
+        .image-item {
+            position: relative;
+            overflow: hidden;
+			width: 100%; 
+            height: 0; 
+			padding-bottom: 100%;
+            border-radius: 10px;
+        }
+        .image-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        transition: transform 0.3s ease;
+		}
+        .image-item .image-caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .image-item:hover .image-caption {
+            opacity: 1;
+        }
+		.image-caption p {
+            font-size: 30px; 
+        }
+    </style>
+	
+	 <div class="image-grid">
+        <div class="image-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Crossing_the_Bridge_Rice_Noodles_full_ingredients_in_Mengzi_%2820200126132053%29.jpg/1280px-Crossing_the_Bridge_Rice_Noodles_full_ingredients_in_Mengzi_%2820200126132053%29.jpg" alt="rice noodle">
+            <div class="image-caption">
+                <p>Crossing-the-bridge noodles have over a century of history and are listed as an intangible cultural heritage of Kunming city in 2008 to promote Yunnan food culture.</p>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Qi_Guoji.jpg/1024px-Qi_Guoji.jpg" alt="ji">
+            <div class="image-caption">
+                <p>Steam Pot Chicken: The special steamer with a vent in the center is used. Place the chicken pieces inside the steamer, and steam them over boiling water. Steam enters the steamer through the vent in the center and cooks the chicken. The soup is formed by condensation of the steam, making it purer and free from impurities.</p>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/WechatIMG608.jpg/1024px-WechatIMG608.jpg" alt="yangyu">
+            <div class="image-caption">
+                <p>In Yunnan dialect, potatoes are called "洋芋" (yáng yù), which literally means "foreigner's taro." Although fried potatoes are a popular dish worldwide, Yunnan's version of fried potatoes has a unique seasoning. Yunnan locals use a variety of spices, such as cilantro, fish mint, chili, garlic, and more.</p>
+            </div>
+        </div>
+        <div class="image-item">
+                       <img src="https://pic1.zhimg.com/80/v2-bc1d53792e3f764e08c73e1df88494a8_1440w.webp" alt="jun">
+                <div class="image-caption">
+				<p>Yunnan is home to a wide variety of wild mushrooms. Although some of them are poisonous, the majority are edible. Due to the inability to cultivate them artificially, the prices of these mushrooms can often be exorbitant. However, their exceptionally high nutritional value and unique flavors make Yunnan locals passionate about consuming these mushrooms.</p>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	
+	
+</body>
+
+<footer>
+    <div class="footer-content">
+        <div class="about-us">
+            <h3>About us</h3>
+            <p>Welcome to Yunnan Traveling! We are your ultimate guide to exploring the enchanting province of Yunnan, China. Our passion is to showcase the diverse and breathtaking destinations this region has to offer. </p>
+        </div>
+        <div class="contact">
+            <h3>Contact us</h3>
+            <p>Adress: 〒606-8225
+京都市左京区田中門前町7番地</p>
+            <p>Phone number：+1234567890</p>
+            <p>Email：YunanT@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+</html>
